@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 import java.util.Set;
 
@@ -105,7 +106,7 @@ public class Program {
                 String kod=scanner.nextLine();
                 System.out.println("Unesi broj: ");
                 String medBroj=scanner.nextLine();
-                return new MeđunarodniBroj(kod, medBroj);
+                return new MedunarodniBroj(kod, medBroj);
         }
         return null;
     }
