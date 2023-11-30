@@ -1,9 +1,31 @@
-package org.example;
 import java.util.ArrayList;
+import java.util.List;
 
-public class InformacijeONastavniku extends LicneInformacije implements InterfejsPredstavi {
-    private String titula;
-    private ArrayList<Ocjena> ocjene;
+public class InformacijeONastavniku extends  LicneInformacije implements MozeOcijeniti, Predstavi {
+    public String ime;
+    public String prezime;
+    public String titula;
+    private List<Ocjena> listaOcjena;
+
+    public InformacijeONastavniku() {
+        this.listaOcjena = new ArrayList<>();
+    }
+
+    public String getIme() {
+        return ime;
+    }
+
+    public void setIme(String ime) {
+        this.ime = ime;
+    }
+
+    public String getPrezime() {
+        return prezime;
+    }
+
+    public void setPrezime(String prezime) {
+        this.prezime = prezime;
+    }
 
     public String getTitula() {
         return titula;
@@ -13,23 +35,23 @@ public class InformacijeONastavniku extends LicneInformacije implements Interfej
         this.titula = titula;
     }
 
-    public ArrayList<Ocjena> getOcjene() { return ocjene; }
 
-    public void setOcjene(ArrayList<Ocjena> ocjene) {
-        this.ocjene = ocjene;
+    public String predstavi(){
+        return ime+" "+prezime+" "+titula;
     }
+
+    public List<Ocjena> getListaOcjena() {
+        return listaOcjena;
+    }
+
 
     @Override
-    public String predstavi() {
-        return getTitula() + " " + getIme() + " " + getPrezime();
-    }
-         @Override
     public Ocjena ocijeni(int x) {
         Ocjena novaOcjena;
 
         LicneInformacije informacijeONastavniku = new LicneInformacije();
-        informacijeONastavniku.setIme("Zehra");
-        informacijeONastavniku.setPrezime("Buza");
+        informacijeONastavniku.setIme("Admir");
+        informacijeONastavniku.setPrezime("Dedic");
 
         novaOcjena = new Ocjena(informacijeONastavniku, x);
         novaOcjena.setOcjena(x);
@@ -37,6 +59,5 @@ public class InformacijeONastavniku extends LicneInformacije implements Interfej
         listaOcjena.add(novaOcjena);
 
         return novaOcjena;
-    
     }
 }
