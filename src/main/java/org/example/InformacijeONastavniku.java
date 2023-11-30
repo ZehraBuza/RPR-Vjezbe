@@ -50,8 +50,8 @@ public class InformacijeONastavniku extends  LicneInformacije implements MozeOci
         Ocjena novaOcjena;
 
         LicneInformacije informacijeONastavniku = new LicneInformacije();
-        informacijeONastavniku.setIme("Admir");
-        informacijeONastavniku.setPrezime("Dedic");
+        informacijeONastavniku.setIme("Zehra");
+        informacijeONastavniku.setPrezime("Buza");
 
         novaOcjena = new Ocjena(informacijeONastavniku, x);
         novaOcjena.setOcjena(x);
