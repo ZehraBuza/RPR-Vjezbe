@@ -23,4 +23,20 @@ public class InformacijeONastavniku extends LicneInformacije implements Interfej
     public String predstavi() {
         return getTitula() + " " + getIme() + " " + getPrezime();
     }
+         @Override
+    public Ocjena ocijeni(int x) {
+        Ocjena novaOcjena;
+
+        LicneInformacije informacijeONastavniku = new LicneInformacije();
+        informacijeONastavniku.setIme("Zehra");
+        informacijeONastavniku.setPrezime("Buza");
+
+        novaOcjena = new Ocjena(informacijeONastavniku, x);
+        novaOcjena.setOcjena(x);
+
+        listaOcjena.add(novaOcjena);
+
+        return novaOcjena;
+    
+    }
 }
