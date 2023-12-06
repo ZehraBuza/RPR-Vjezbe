@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="1470.0" minHeight="100.0" minWidth="80.0" prefWidth="440.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.HelloController">
+    <padding>
+        <Insets bottom="-500.0" left="20.0" right="100.0" top="250.0" />
+    </padding>
+    <Button minHeight="45.0" minWidth="70.0" onAction="#postotak" rotate="1.1" text="\%" textFill="#2d2d2d" translateX="-127.0" translateY="-165.0">
+        <VBox.margin>
+            <Insets />
+        </VBox.margin></Button>
+    <Label layoutX="100.0" layoutY="100.0" prefHeight="40.0" prefWidth="320.0" text="rezultat" translateY="-290.0" translateZ="100.0">
+        <VBox.margin>
+            <Insets top="10.0" />
+        </VBox.margin>
+    </Label>
+    <Button minHeight="45.0" minWidth="70.0" mnemonicParsing="false" onAction="#dijeljenje" text="/" translateX="-30.0" translateY="-300.0" />
+    <Button minHeight="45.0" minWidth="70.0" mnemonicParsing="false" onAction="#mnozenje" text="x" translateX="70.0" translateY="-365.0" />
+    <Button minHeight="45.0" minWidth="70.0" mnemonicParsing="false" onAction="#oduzimanje" text="-" translateX="170.0" translateY="-430.0" />
+    <Button minHeight="330.0" minWidth="90.0" mnemonicParsing="false" onAction="#sabiranje" text="+" translateX="190.0" translateY="-400.0" />
+    <Button minHeight="270.0" minWidth="80.0" mnemonicParsing="false" onAction="#jednako" text="=" translateX="190.0" translateY="-400.0" />
+    <Button minHeight="50.0" minWidth="70.0" mnemonicParsing="false" onAction="#button7Clicked" text="7" translateX="-130.0" translateY="-1050.0" />
+    <Button minHeight="50.0" minWidth="70.0" mnemonicParsing="false" onAction="#button8Clicked" text="8" translateX="-30.0" translateY="-1120.0" />
+    <Button minHeight="50.0" minWidth="70.0" mnemonicParsing="false" onAction="#button9Clicked" text="9" translateX="70.0" translateY="-1190.0" />
+    <Button minHeight="50.0" minWidth="70.0" mnemonicParsing="false" onAction="#button4Clicked" text="4" translateX="-130.0" translateY="-1150.0" />
+    <Button minHeight="50.0" minWidth="70.0" mnemonicParsing="false" onAction="#button5Clicked" text="5" translateX="-30.0" translateY="-1220.0" />
+    <Button minHeight="50.0" minWidth="70.0" mnemonicParsing="false" onAction="#button6Clicked" text="6" translateX="70.0" translateY="-1290.0" />
+    <Button minHeight="50.0" minWidth="70.0" mnemonicParsing="false" onAction="#button1Clicked" text="1" translateX="-130.0" translateY="-1270.0" />
+    <Button minHeight="50.0" minWidth="70.0" mnemonicParsing="false" onAction="#button2Clicked" text="2" translateX="-30.0" translateY="-1338.0" />
+    <Button minHeight="50.0" minWidth="70.0" mnemonicParsing="false" onAction="#button3Clicked" text="3" translateX="73.0" translateY="-1405.0" />
+    <Button minHeight="50.0" minWidth="190.0" mnemonicParsing="false" onAction="#button0Clicked" text="0" translateX="-75.0" translateY="-1360.0" />
+    <Button minHeight="60.0" minWidth="60.0" mnemonicParsing="false" onAction="#zarez" text="," translateX="80.0" translateY="-1430.0" />
+    <opaqueInsets>
+        <Insets />
+    </opaqueInsets>
+</VBox>
